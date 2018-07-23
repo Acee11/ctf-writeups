@@ -1,6 +1,6 @@
 # Mobile Bank
 
-In this task we are single binary and tcp server to connect to.
+In this task we are given single binary and tcp server to connect to.
 
 ## Solution
 
