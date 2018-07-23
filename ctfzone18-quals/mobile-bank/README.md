@@ -145,7 +145,7 @@ It's ELF header, so my hypothesis was correct. Now the plan is following:
 2. Leak some memory starting somewhere near libc_base + system_offset.
 3. Find `system` addres by it's signature.
 
-Saddenly, out leaking function is `snprintf`, which stops on null byte, which means we will have to write a script and leak those bytes in a loop.
+Unfortunately, out leaking function is `snprintf`, which stops on null byte, which means we will have to write a script and leak those bytes in a loop.
 
 ```python
 guess_system_addr = libc_base_guess + SYSTEM_OFFSET
